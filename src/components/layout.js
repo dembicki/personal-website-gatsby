@@ -7,35 +7,29 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const Layout = ({ children, title , bg}) => {
+  let titleText = title;
+  let background = bg;
+  console.log(background);
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header title={titleText} />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 1200,
           padding: `0 1.0875rem 1.45rem`,
           border: `1px solid red`,
-          display: `flex`
+          display: `flex`,
+          height: `81vh`,
         }}
       >
-        <main>{children}</main>
+        <section>{children}</section>
       </div>
     </>
   )
@@ -43,6 +37,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string,
 }
 
 export default Layout
