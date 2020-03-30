@@ -5,8 +5,8 @@ import React from "react"
 const Header = ({ title }) => (
   <header
     style={{
-      marginTop: `2rem`,
-      marginBottom: `2rem`,
+      marginTop: `1.5rem`,
+      marginBottom: `1.5rem`,
     }}
   >
     <div
@@ -21,7 +21,7 @@ const Header = ({ title }) => (
         textAlign: "center",
         fontFamily: "Poppins",
         fontWeight: 600,
-        fontSize: `1.6rem`,
+        fontSize: `1.4rem`,
         color: `black`,
         }}>
           {title}
