@@ -12,23 +12,35 @@ import Header from "./header"
 import "./layout.css"
 import { Container } from 'react-bootstrap'
 
-const Layout = ({ children, title , bg}) => {
+const Layout = ({ children, title, fluid, bgSrc}) => {
   let titleText = title;
-  let background = bg;
-  console.log(background);
 
-  return (
+  if(fluid) return (
     <>
-      <Header title={titleText} />
-      <Container
+      <div 
         style={{
           border: `1px solid red`,
-          height: `81vh`,
+          height: `100vh`,
+          backgroundImage: `url(${bgSrc})`,
+          backgroundSize: `cover`
         }}
       >
         <section>{children}</section>
-      </Container>
+      </div>
     </>
+  )
+  else return(
+    <>
+    <Container 
+      style={{
+        border: `1px solid red`,
+        height: `100vh`,
+        width:``,
+      }}
+    >
+      <section>{children}</section>
+    </Container>
+  </>
   )
 }
 

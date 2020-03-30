@@ -7,6 +7,7 @@ const Header = ({ title }) => (
     style={{
       marginTop: `1.5rem`,
       marginBottom: `1.5rem`,
+      zIndex: -1,
     }}
   >
     <div
