@@ -5,9 +5,9 @@ const HeroText = ({text}) => (
         position:`absolute`,
         top:`30%`,
         color:`white`,
-        fontSize: `60px`
+        fontSize: `70px`
     }}>
-        {text}
+        Let's make some <br /> beutiful <span style={{fontSize: `68px`}}>things</span> <br />together.
     </h1>
 )
 export default HeroText;
