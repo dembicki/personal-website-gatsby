@@ -16,9 +16,18 @@ const Contact = () => (
         <Header title="Contact me if you are interested in" />
         <Row>
             <Col md="6" style={{ border: `1px solid red`,display:'flex',contentAlign:'center' }}>
-              <div style={{width:`300px`}}>
-                <h2>Damian Dembicki</h2>
+              <div className="mx-auto" style={{width:`300px`}}>
+                <h3>Damian Dembicki</h3>
                 <ul>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
                   <li>
                     <a href="#">Link</a>
                   </li>
