@@ -3,18 +3,11 @@ import {
     Row,
     Col,
     Container,
-    Button,
-    Navbar,
-    Nav,
-    NavDropdown,
-    Form,
-    FormControl,
   } from "react-bootstrap"
 
   //components
   import Layout from '../components/layout'
   import Header from '../components/header'
-
 
   import aboutImage from "../images/about-me-background.png"
 
@@ -51,6 +44,7 @@ const About = () => (
                 opposed to using 'Content here, content
               </p>
             </Col>
+            <Col md="12" style={{ border: `1px solid red` }}>3 of 3</Col>
           </Row>
         </Container>
       </Layout>
