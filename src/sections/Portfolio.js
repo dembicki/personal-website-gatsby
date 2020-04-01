@@ -41,7 +41,7 @@ const Portfolio = () => {
       </Row>
 
       <Row className="pt-5">
-        <Button className="mx-auto">all the projects on github</Button>
+        <Button className="mx-auto" style={{width:`300px`}}>all the projects on github</Button>
       </Row>
     </Layout>
   )

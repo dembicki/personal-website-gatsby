@@ -7,7 +7,10 @@ import Header from "../components/header"
 import LinkButton from "../components/linkButton"
 
 import aboutImage from "../images/about-me-background.png"
-import profileImage from '../images/damian.png'
+import profileImage from "../images/damian.png"
+import skillsBar from "../components/skillsBar"
+
+import reactImage from "../images/logo/react.png"
 
 const About = () => {
   const socialLinks = [
@@ -35,7 +38,7 @@ const About = () => {
       >
         <Row>
           <Col
-            md="4"
+            md="3"
             style={{
               border: `1px solid red`,
               display: `flex`,
@@ -44,16 +47,24 @@ const About = () => {
             }}
           >
             {/* TODO:replace with gatsby-image */}
-            <img src={profileImage} style={{height:`330px`}}/>
-            { socialLinks.map((e) => {
-                return <LinkButton key={e.title}>{e.title}</LinkButton>
+            <img
+              src={profileImage}
+              style={{ height: `auto`, border: `1px solid #707070` }}
+            />
+            {socialLinks.map(e => {
+              return <LinkButton key={e.title}>{e.title}</LinkButton>
             })}
           </Col>
-          <Col md="8" style={{ border: `1px solid red`,paddingLeft:`30px` }}>
-            <h2 style={{
-              fontSize:`1.3rem`,
-              lineHeight: `1.8rem`
-            }}>I'm a 23-years-old frontend developer and graphic designer located in Gdynia, Poland.</h2>
+          <Col md="9" style={{ border: `1px solid red`, paddingLeft: `30px` }}>
+            <h2
+              style={{
+                fontSize: `1.3rem`,
+                lineHeight: `1.8rem`,
+              }}
+            >
+              I'm a 23-years-old frontend developer and graphic designer located
+              in Gdynia, Poland.
+            </h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -68,16 +79,30 @@ const About = () => {
               a reader will be distracted by the readable content of a page when
               looking at its layout. The point of using Lorem Ipsum is that it
               has a more-or-less normal distribution of letters, as opposed to
-              using 'Content here, content electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum. Why do we use it? It is a long established fact that
-              
             </p>
           </Col>
-          <Col md="12" style={{ border: `1px solid red` }}>
-            3 of 3
+          <Col
+            md="12"
+            style={{
+              border: `1px solid red`,
+              padding: `20px 10px 0`,
+              display: `flex`,
+              justifyContent: `space-around`,
+              flexGrow: `1`,
+              flexWrap: `no-wrap`,
+            }}
+          >
+            <div>
+              <img src={reactImage} />
+              <img src={reactImage} />
+              <img src={reactImage} />
+              <img src={reactImage} />
+              <img src={reactImage} />
+              <img src={reactImage} />
+              <img src={reactImage} />
+              <img src={reactImage} />
+              <img src={reactImage} />
+            </div>
           </Col>
         </Row>
       </Container>

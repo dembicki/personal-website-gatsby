@@ -36,7 +36,7 @@ const Hero = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               {Links.map(e => {
-                return <Nav.Link key={e} href={'#'+e} style={{ color: `white`, fontWeight: `500` }}>{e} </Nav.Link>
+                return <Nav.Link key={e} href={'#'+e} style={{ color: `white`, fontWeight: `500`, }}>{e} </Nav.Link>
               })}
             </Nav>
           </Navbar.Collapse>

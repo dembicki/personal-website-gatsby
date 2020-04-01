@@ -9,7 +9,7 @@ const LinkButton = ({ children }) => (
               border: '2px solid #eee',
               color:'black',
               backgroundColor:'white',
-              marginTop:`20px`
+              marginTop:`15px`
             }}
           >{ children }</Button>
 )
