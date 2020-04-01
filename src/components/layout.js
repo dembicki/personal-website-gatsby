@@ -22,7 +22,7 @@ const Layout = ({ children, title, fluid, bgSrc}) => {
           border: `1px solid red`,
           height: `100vh`,
           backgroundImage: `url(${bgSrc})`,
-          backgroundSize: `cover`
+          backgroundSize: `cover`,
         }}
       >
         <section>{children}</section>

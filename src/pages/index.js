@@ -15,6 +15,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Damian Dembicki" />
+      
       {/* Hero section */}
       <Hero />
 
@@ -23,8 +24,8 @@ const IndexPage = () => {
 
       {/* About me section */}
       <About />
-      {/* Contact section */}
 
+      {/* Contact section */}
       <Contact />
     </>
   )
