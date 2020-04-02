@@ -10,14 +10,14 @@ const Portfolio = () => {
   const projectData = [
     {
       id: "0",
-      title: "Title1",
-      description: "lorem ipsum",
+      title: "Thumbnail generator",
+      description: "Simple tool for creating blog thumbnails. No graphic software needed! Created in vanilla JS & Skeleton CSS",
       link: "#",
     },
     {
       id: "1",
-      title: "App #2",
-      description: "lorem ipsum",
+      title: "This Website",
+      description: "This website design was prototyped in Adobe Xd and created and developed using React and Gatsby.",
       link: "#",
     },
     {
@@ -41,7 +41,7 @@ const Portfolio = () => {
       </Row>
 
       <Row className="pt-5">
-        <Button className="mx-auto" style={{width:`300px`}}>all the projects on github</Button>
+        <Button href="https://github.com/dembicki" className="mx-auto test" style={{width:`300px`}}>all the projects on github</Button>
       </Row>
     </Layout>
   )

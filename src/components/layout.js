@@ -12,17 +12,16 @@ import Header from "./header"
 import "./layout.css"
 import { Container } from 'react-bootstrap'
 
-const Layout = ({ children, title, fluid, bgSrc}) => {
+const Layout = ({ children, title, fluid, bgColor}) => {
   let titleText = title;
 
   if(fluid) return (
     <>
       <div 
         style={{
-          border: `1px solid red`,
+          border: `1px solid blue`,
           height: `100vh`,
-          backgroundImage: `url(${bgSrc})`,
-          backgroundSize: `cover`,
+          backgroundColor: `#f7f1e3`
         }}
       >
         <section>{children}</section>
@@ -36,6 +35,7 @@ const Layout = ({ children, title, fluid, bgSrc}) => {
         border: `1px solid red`,
         height: `100vh`,
         width:``,
+        backgroundColor:`white`
       }}
     >
       <section>{children}</section>
@@ -47,6 +47,7 @@ const Layout = ({ children, title, fluid, bgSrc}) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string,
+  bgColor: PropTypes.string,
 }
 
 export default Layout

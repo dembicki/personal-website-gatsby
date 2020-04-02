@@ -7,7 +7,7 @@ const Project = ({title, description}) => (
     <Card.Img variant="top" src="!https://via.placeholder.com/150" />
     <Card.Body style={{border:`1px solid #707070`}}>
       <Card.Title style={{fontWeight:600}}>{title}</Card.Title>
-      <Card.Text>
+      <Card.Text style={{fontSize:`.9rem`}}>
         {description}
       </Card.Text>
     </Card.Body>

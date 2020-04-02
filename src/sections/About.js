@@ -28,8 +28,10 @@ const About = () => {
     },
   ]
 
+  const logos = new Array(10);
+
   return (
-    <Layout fluid bgSrc={aboutImage}>
+    <Layout fluid >
       <Header title="A few words about me" />
       <Container
         style={{
@@ -93,15 +95,9 @@ const About = () => {
             }}
           >
             <div>
-              <img src={reactImage} />
-              <img src={reactImage} />
-              <img src={reactImage} />
-              <img src={reactImage} />
-              <img src={reactImage} />
-              <img src={reactImage} />
-              <img src={reactImage} />
-              <img src={reactImage} />
-              <img src={reactImage} />
+            {logos.map(e => {
+              return <p>e.value</p>
+            })}
             </div>
           </Col>
         </Row>
